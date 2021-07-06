@@ -85,3 +85,10 @@
   * If data types of compared values are different, this operator automatically performs a coercion.
   * Example: `2 <= 2` results to `true`
   
+## Logical operators
+
+Logical operators and boolean logic in JavaScript is absolutely similar to the way how it is implemented in other programming languages:
+
+* `&&` - AND
+* `||` - OR
+* `!` - NOT
