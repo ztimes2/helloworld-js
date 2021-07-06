@@ -14,7 +14,7 @@ if (dolphinsScoreAverage > koalasScoreAverage && dolphinsScoreAverage >= MIN_WIN
   console.log("Dolphins won!");
 } else if (dolphinsScoreAverage < koalasScoreAverage && koalasScoreAverage >= MIN_WINNING_SCORE) {
   console.log("Koalas won!");
-} else if (dolphinsScoreAverage == koalasScoreAverage && dolphinsScoreAverage >= MIN_WINNING_SCORE) {
+} else if (dolphinsScoreAverage === koalasScoreAverage && dolphinsScoreAverage >= MIN_WINNING_SCORE) {
   console.log("Draw!");
 } else {
   console.log("No winner!");
