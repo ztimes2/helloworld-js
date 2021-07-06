@@ -48,20 +48,26 @@
 ## Comparison operators
 
 * `==`
-  * Compares if the first value is loosely equals to the second one. 
+  * Compares if the first value is loosely equal to the second one. 
   * If data types of compared values are different, this operator automatically performs a coercion.
   * Example: 
     * `2 == 1` results to `false`
 * `===`
-  * Compares if the first value is strictly equals to the second one. 
-  * If data types of compared values are different, coercion is skipped and the result of the comparison will be `false`.
+  * Compares if the first value is strictly equal to the second one. 
+  * If data types of compared values are different, coercion is skipped and the data types are comparison instead of the values.
   * Example: 
     * `2 === 2` results to `true`
     * `"2" === 2` results to `false`
 * `!=`
-  * Compares if the first value is not equals to the second one.
+  * Compares if the first value is not equal to the second one.
   * If data types of compared values are different, this operator automatically performs a coercion.
   * Example: `2 != 1` results to `true`
+* `!==`
+  * Compares if the first value is not strictly equal to the second one. 
+  * If data types of compared values are different, coercion is skipped and the data types are comparison instead of the values.
+  * Example: 
+    * `2 !== 2` results to `false`
+    * `"2" !== 2` results to `true`
 * `>`
   * Compares if the first value is greater than the second one.
   * If data types of compared values are different, this operator automatically performs a coercion.
