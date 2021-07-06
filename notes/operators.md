@@ -92,3 +92,10 @@ Logical operators and boolean logic in JavaScript is absolutely similar to the w
 * `&&` - AND
 * `||` - OR
 * `!` - NOT
+
+## Conditional operator
+
+JavaScript provides a ternary conditional operator using the following syntax: `conditional expression ? true expression : false expression`
+This operator returns either the `true expression` or `false expression` depending if the conditional expression is satisfied or not.
+
+Example: `let result = 2 > 1 ? "greater" : "less";`
