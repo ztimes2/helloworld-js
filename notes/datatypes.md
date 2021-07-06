@@ -7,8 +7,9 @@ JavaScript is dynamically typed programming language. Therefore, there is no nee
 * **number**
   * Integers and decimals (i.e. `69`, `6.9`, etc).
 * **string**
-  * Sequence of characters (i.e. `"foo"`, `'bar'`, etc).
-  * Must be surrounded with `"` or `'`.
+  * Sequence of characters (i.e. `"foo"`, `'foo'`, `` `foo` ``, etc).
+  * Must be surrounded with `"`, `'`, or `` ` ``.
+  * Unlike `"` and `'`, `` ` `` enables the usage of template literals that allow features like multi-line strings and string interpolation (i.e. `` `Hello, ${expression}!` ``).   
 * **boolean**
   * Logical type (i.e. `true` or `false`).
 * **undefined**
