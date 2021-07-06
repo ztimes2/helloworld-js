@@ -1,0 +1,10 @@
+# Variables
+
+## Naming
+* `camelCase` by convention.
+* Must not start with a capital letter by convention (i.e. `myVar`).
+  * Capitalization is used for class names (i.e. `MyClass`).
+  * All-caps are used for constants (i.e. `MY_CONSTANT`).
+* Only letters, numbers, underscores or `$` are allowed.
+* Must not start with a number.
+* Must not be named using reserved keywords.
