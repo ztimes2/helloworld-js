@@ -9,7 +9,7 @@ const totals = [];
 
 for (let i = 0; i < bills.length; i++) {
   const bill = bills[i];
-  const tip = calculateTips(bill);
+  const tip = calculateTip(bill);
   tips.push(tip);
   totals.push(bill + tip);
 }
