@@ -1,6 +1,8 @@
 # Objects
 
-An object in JavaScript, similarly to other programming languages, is a complex data structure that contains a collection of keys (aka fields/properties) and values. A value can be set to any primitive data type, an array, or another object (aka child/nested object). 
+An object in JavaScript, similarly to other programming languages, is a complex data structure that contains a collection of keys (a.k.a. fields/properties) and values. A value can be set to any primitive data type, an array, another object (a.k.a. child/nested object), or a function expression (a.k.a. object method).
+
+Methods can access other properties of an object that they are attached to using the special `this` keyword. This keyword is available only when a function expression is declared using the `function` keyword. Arrow functions do not support `this` keyword.
 
 Similarly to the arrays, even if an object is stored in a `const` variable, it still remains to be mutable.
 
@@ -13,8 +15,12 @@ Examples:
 ```javascript
 const human = {
   firstName: "John",
-  lastName: "Doe"
-}
+  lastName: "Doe",
+  
+  summarize: function() => {
+    return `I am ${this.firstName} ${this.lastName}!`;
+  }
+};
 ```
 
 ## Operations with objects
@@ -27,7 +33,7 @@ Examples:
 const human = {
   firstName: "John",
   lastName: "Doe"
-}
+};
 
 human.firstName = "Jane";
 let lastName = human.lastName;
@@ -41,7 +47,7 @@ Examples:
 const human = {
   firstName: "John",
   lastName: "Doe"
-}
+};
 
 const suffix = "Name";
 
@@ -57,7 +63,7 @@ Examples:
 const human = {
   firstName: "John",
   lastName: "Doe"
-}
+};
 
 human.age = 18;
 
